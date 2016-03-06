@@ -1,12 +1,12 @@
 {
   "name": "pure-random",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A purely functional random number generator",
-  "main": "index.js",
+  "main": "src/pure-random.js",
   "scripts": {
-    "pretest": "gcc -o ./bin/xorshift ./bin/xorshift128.c",
-    "test": "mocha && ./bin/compare-test.sh",
-    "clean": "rm -f ./bin/xorshift"
+    "pretest": "gcc -o bin/xorshift bin/xorshift128.c",
+    "test": "mocha && bin/compare-test.sh",
+    "clean": "rm -f bin/xorshift"
   },
   "repository": {
     "type": "git",
