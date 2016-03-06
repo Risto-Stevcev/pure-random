@@ -1,0 +1,38 @@
+{
+  "name": "pure-random",
+  "version": "0.0.1",
+  "description": "A purely functional random number generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Risto-Stevcev/pure-random.git"
+  },
+  "keywords": [
+    "random",
+    "number",
+    "generator",
+    "pure",
+    "fantayland",
+    "fantasy",
+    "land",
+    "csprng"
+  ],
+  "author": "Risto Stevcev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Risto-Stevcev/pure-random/issues"
+  },
+  "homepage": "https://github.com/Risto-Stevcev/pure-random#readme",
+  "dependencies": {
+    "ramda": "^0.19.1",
+    "sanctuary": "^0.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsverify": "^0.7.1",
+    "mocha": "^2.4.5"
+  }
+}
