@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "gcc -o ./bin/xorshift ./bin/xorshift128.c",
     "test": "mocha && ./bin/compare-test.sh",
-    "clean": "rm ./bin/xorshift"
+    "clean": "rm -f ./bin/xorshift"
   },
   "repository": {
     "type": "git",

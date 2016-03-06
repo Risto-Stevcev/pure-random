@@ -54,9 +54,13 @@ const validate = (seed, min, max, randFn) => {
     return S.Right(randFn(seed, min, max))
 }
 
-// :: [UInt32] -> Int -> Int
+// :: [UInt32] -> Int -> Int -> Float
 const rand      = R.curry((seed, min, max) => min + xorshift(seed) / UINT32_MAX * (max - min))
+
+// :: [UInt32] -> Int -> Int -> Either Error Float
 const randFloat = R.curry((seed, min, max) => validate(seed, min, max, rand))
+
+// :: [UInt32] -> Int -> Int -> Either Error Int
 const random    = R.curry((seed, min, max) => randFloat(seed, min, max).map(Math.round))
 
 module.exports = {
