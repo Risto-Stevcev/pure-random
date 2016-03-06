@@ -4,7 +4,9 @@
   "description": "A purely functional random number generator",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "pretest": "gcc -o ./bin/xorshift ./bin/xorshift128.c",
+    "test": "mocha && ./bin/compare-test.sh",
+    "clean": "rm ./bin/xorshift"
   },
   "repository": {
     "type": "git",
